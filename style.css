@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Poppins', monospace;
+  font-family: 'Roboto', monospace;
   background: var(--bg-dark);
   color: var(--white);
   overflow-x: hidden;
