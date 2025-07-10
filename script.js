@@ -102,18 +102,18 @@ document.addEventListener('DOMContentLoaded',  function() {
 
   window.addEventListener('scroll', animateOnScroll);
 
-  // Resume download
-  const resumeBtn = document.querySelector('.resume-btn');
+  // // Resume download
+  // const resumeBtn = document.querySelector('.resume-btn');
 
-  resumeBtn.addEventListener('click', () => {
-    const pdfUrl = 'Assets/Uday Resume.pdf'; // Replace with your actual file path
-    const a = document.createElement('a');
-    a.href = pdfUrl;
-    a.download = 'Uday_Resume.pdf'; // File name shown on download
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
+  // resumeBtn.addEventListener('click', () => {
+  //   const pdfUrl = 'Assets/Uday Resume.pdf'; // Replace with your actual file path
+  //   const a = document.createElement('a');
+  //   a.href = pdfUrl;
+  //   a.download = 'Uday_Resume.pdf'; // File name shown on download
+  //   document.body.appendChild(a);
+  //   a.click();
+  //   document.body.removeChild(a);
+  // });
 
   // Particle effect on hover
   function createParticle(x, y) {
