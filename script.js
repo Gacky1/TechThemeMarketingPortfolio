@@ -227,5 +227,49 @@ document.addEventListener('DOMContentLoaded',  function() {
     });
   }
   window.addEventListener('scroll', animateProjectsOnScroll);
+
+  // --- Project Carousel Logic ---
+  function initProjectCarousels() {
+    document.querySelectorAll('.project-carousel').forEach(carousel => {
+      const images = carousel.querySelectorAll('.carousel-img');
+      const dots = carousel.querySelectorAll('.carousel-dot');
+      const leftBtn = carousel.querySelector('.carousel-arrow.left');
+      const rightBtn = carousel.querySelector('.carousel-arrow.right');
+      let current = 0;
+      function show(idx) {
+        images.forEach((img, i) => {
+          img.classList.toggle('active', i === idx);
+        });
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === idx);
+        });
+        current = idx;
+      }
+      leftBtn.addEventListener('click', () => {
+        show((current - 1 + images.length) % images.length);
+      });
+      rightBtn.addEventListener('click', () => {
+        show((current + 1) % images.length);
+      });
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => show(i));
+      });
+      // Touch/swipe support
+      let startX = null;
+      carousel.addEventListener('touchstart', e => {
+        if (e.touches.length === 1) startX = e.touches[0].clientX;
+      }, {passive: true});
+      carousel.addEventListener('touchend', e => {
+        if (startX !== null && e.changedTouches.length === 1) {
+          const dx = e.changedTouches[0].clientX - startX;
+          if (dx > 40) leftBtn.click();
+          else if (dx < -40) rightBtn.click();
+        }
+        startX = null;
+      });
+      show(0);
+    });
+  }
+  initProjectCarousels();
 });
  
