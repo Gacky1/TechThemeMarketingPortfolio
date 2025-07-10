@@ -11,12 +11,12 @@
   --white: #ffffff;
   --green: #00ff99;
   --dark-gray: #1a1a1a; */
-  --bg-dark: #1e1e2f;       /* Deep navy with a hint of purple – modern & sleek */
-  --cyan: #3ebbd1;          /* Soft teal-blue – techy but not too loud */
-  --magenta: #b66d9c;       /* Dusty rose – elegant and balanced */
-  --white: #f0f2f5;         /* Light gray-white – clean and readable */
-  --green: #6fcf97;         /* Calm green – fresh but muted */
-  --dark-gray: #2c2c3a;     /* Subtle warm dark gray – smoother than black */
+  --bg-dark: #202124;
+  --cyan: #00bcd4;
+  --magenta: #ec407a;
+  --white: #f5f5f5;
+  --green: #4caf50;
+  --dark-gray: #2e2e32; /* Subtle warm dark gray – smoother than black */
 }
 
 body {
