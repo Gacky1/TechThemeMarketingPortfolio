@@ -64,15 +64,16 @@ document.addEventListener('DOMContentLoaded',  function() {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const targetSection = this.getAttribute('data-section');
-      
       sections.forEach(section => {
         section.classList.remove('active');
       });
-      
       document.getElementById(targetSection).classList.add('active');
-      
       if(targetSection === 'skills') {
         setTimeout(animateSkills, 100);
+      }
+      // Animate projects on show
+      if(targetSection === 'projects') {
+        setTimeout(animateProjects, 100);
       }
     });
   });
@@ -202,5 +203,29 @@ document.addEventListener('DOMContentLoaded',  function() {
     }, {passive: true});
   }
   document.querySelectorAll('button, .social-link').forEach(addParticleListeners);
+
+  // Animate project cards on scroll or show
+  function animateProjects() {
+    const projectCards = document.querySelectorAll('.project-case-study');
+    projectCards.forEach((card, i) => {
+      setTimeout(() => {
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }, i * 120);
+    });
+  }
+
+  // Also trigger on scroll for progressive reveal
+  function animateProjectsOnScroll() {
+    const projectCards = document.querySelectorAll('.project-case-study');
+    projectCards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if(rect.top < window.innerHeight && rect.bottom > 0) {
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }
+    });
+  }
+  window.addEventListener('scroll', animateProjectsOnScroll);
 });
  

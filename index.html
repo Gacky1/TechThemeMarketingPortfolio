@@ -6,14 +6,12 @@
   
   <title>Uday Maheshwari Portfolio</title>
   <meta name="description" content="Discover Uday Maheshwari's professional marketing and tech portfolio. Explore skills, freelance services, achievements, and contact details — built with smooth animations and a modern design.">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://udaymaheshwari.pages.dev/"> <!-- Replace with your actual domain -->
   <meta property="og:title" content="Uday Maheshwari | MarketingPortfolio">
   <meta property="og:description" content="View Uday Maheshwari’s portfolio highlighting digital marketing skills, freelance services, and professional achievements in a modern, animated layout.">
   <meta property="og:image" content="https://imagedelivery.net/None/f6018993j04cdj4e11ja661jbea7a0315734/public">
-
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://udaymaheshwari.pages.dev/"> <!-- Replace with your actual domain -->
@@ -35,7 +33,23 @@
   <div id="intro-screen" class="intro-screen">
     <canvas id="bg-canvas"></canvas>
     <div class="intro-content">
-      <h1 class="intro-title">ENTER THE PORTFOLIO</h1>
+          <section id="about" class="section active">
+      <div class="container">
+        <div class="about-content" style="margin:-150px 0 0 0">
+          <div class="profile-image">
+            <img src="/Assets/uday about.jpg" height="400px" width="400px" alt="Profile">
+          </div>
+          <div class="about-text">
+            <h1 class="name">UDAY MAHESHWARI</h1>
+            <div class="bio">
+              <p>Marketing Strategist & Digital Growth Expert</p>
+              <p>An Experienced Content Manager with a history of driving content marketing efforts and increasing app traffic. Skilled in creating and managing content for web, app, and social media.</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+      <h1 class="intro-title" style="margin:-250px 0 0 0">ENTER THE PORTFOLIO</h1>
       <button id="portfolio-btn" class="portfolio-btn">PORTFOLIO</button>
     </div>
   </div>
@@ -45,15 +59,16 @@
       <div class="nav-brand">UDAY</div>
       <button id="hamburger-btn" class="hamburger" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">&#9776;</button>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about" data-section="about">ABOUT</a></li>
-        <li><a href="#freelance" data-section="freelance">SERVICES</a></li>
+        <!-- <li><a href="#about" data-section="about">ABOUT</a></li> -->
+        <li><a href="#freelance" data-section="freelance">RESUME</a></li>
         <li><a href="#skills" data-section="skills">SKILLS</a></li>
+        <li><a href="#projects" data-section="projects">PROJECTS</a></li>
         <li><a href="#achievements" data-section="achievements">Achievements</a></li>
         <li><a href="#contact" data-section="contact">CONTACT</a></li>
       </ul>
     </nav>
 
-    <section id="about" class="section active">
+    <!-- <section id="about" class="section active">
       <div class="container">
         <div class="about-content">
           <div class="profile-image">
@@ -68,12 +83,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="freelance" class="section">
+    <section id="freelance" class="section active">
       <div class="container">
-        <h2 class="section-title">OPEN FOR FREELANCE PROJECTS</h2>
-        <p class="freelance-text">Ready to transform your vision into reality</p>
+        <h2 class="section-title">Ready to transform your vision into reality</h2>
+     <HR></HR>
+     <br>
         <button class="resume-btn">DOWNLOAD RESUME</button>
       </div>
     </section>
@@ -114,11 +130,69 @@
           </div> -->
           <div class="skill-item">
             <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=80&h=80&fit=crop&crop=center" alt="Email Marketing" class="skill-image">
-            <div class="skill-name">Email Marketing</div>
+            <div class="skill-name">Brand Marketing</div>
             <div class="skill-description">Automated campaigns and nurture sequences</div>
             <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
           </div>
         </div> 
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">PROJECTS & CAMPAIGNS</h2>
+        <div class="projects-grid">
+          <div class="project-case-study">
+            <div class="project-header">
+              <div class="project-logo"><i class="fa-solid fa-bolt"></i></div>
+              <h3 class="project-title">Level Up With Manoj Dey</h3>
+              <span class="project-badge">Influencer Campaign · Khiladi Adda</span>
+            </div>
+            <div class="project-detail"><span class="detail-icon"><i class="fa-solid fa-bullseye"></i></span><strong>Objective:</strong>
+              <ul>
+                <li>Increase app installs and user sign-ups</li>
+                <li>Improve brand awareness or re-engage dormant users</li>
+              </ul>
+            </div>
+            <div class="project-detail"><span class="detail-icon"><i class="fa-solid fa-users"></i></span><strong>Target Audience:</strong>
+              <ul>
+                <li>Tier 2/3 gaming audience</li>
+                <li>Casual gamers, aspiring esports players, content consumers</li>
+              </ul>
+            </div>
+            <div class="project-detail"><span class="detail-icon"><i class="fa-solid fa-lightbulb"></i></span><strong>Strategy:</strong>
+              <ul>
+                <li>Collaborated with Manoj Dey (YouTube tech/gaming creator with strong Tier 2 appeal)</li>
+                <li>Storytelling approach: Highlighted success stories of real players earning money via the app</li>
+                <li>Amplified via short-form clips + YouTube long video + Instagram stories</li>
+              </ul>
+            </div>
+            <div class="project-detail"><span class="detail-icon"><i class="fa-solid fa-rocket"></i></span><strong>Execution:</strong>
+              <ul>
+                <li>Campaign duration: 10 days</li>
+                <li>Channels: YouTube, Instagram, Telegram</li>
+                <li>Formats: YouTube Video, Instagram Reel, App banner promo</li>
+              </ul>
+            </div>
+            <div class="project-detail"><span class="detail-icon"><i class="fa-solid fa-chart-line"></i></span><strong>Results:</strong>
+              <ul>
+                <li>200K+ YouTube video views</li>
+                <li>15K+ installs directly attributed (via tracked links)</li>
+                <li>40% increase in DAUs during campaign period</li>
+                <li>3.5X ROI on influencer spend</li>
+              </ul>
+            </div>
+            <div class="project-detail"><span class="detail-icon"><i class="fa-solid fa-toolbox"></i></span><strong>Measurement Tools Used:</strong>
+              <ul>
+                <li>Appsflyer (install tracking)</li>
+                <li>YouTube Analytics (views, CTR, watch time)</li>
+                <li>Firebase (DAU, retention)</li>
+                <li>Google Sheets dashboard for real-time data</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add more .project-case-study blocks for each project -->
+        </div>
       </div>
     </section>
 
@@ -176,7 +250,7 @@
             <div class="contact-icon">📷</div>
             <div class="contact-info">
               <h3>Instagram</h3>
-              <a href="https://www.instagram.com/_original_gamer/" target="_blank">@_original_gamer</a>
+              <a href="https://www.instagram.com/maheshwariuday_/" target="_blank">@maheshwariuday_/</a>
             </div>
           </div>
         </div>
@@ -187,7 +261,7 @@
       <div class="social-links">
         <a href="https://www.linkedin.com/in/uday-maheshwari-/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
         <!-- <a href="https://github.com/udaymaheshwari" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a> -->
-        <a href="https://instagram.com/_original_gamer" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://instagram.com/maheshwariuday_" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://wa.me/917247836204" target="_blank" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </footer>
