@@ -5,12 +5,18 @@
 }
 
 :root {
-  --bg-dark: #0f0f0f;
+  /* --bg-dark: #0f0f0f;
   --cyan: #00ffff;
   --magenta: #ff00ff;
   --white: #ffffff;
   --green: #00ff99;
-  --dark-gray: #1a1a1a;
+  --dark-gray: #1a1a1a; */
+  --bg-dark: #1e1e2f;       /* Deep navy with a hint of purple – modern & sleek */
+  --cyan: #3ebbd1;          /* Soft teal-blue – techy but not too loud */
+  --magenta: #b66d9c;       /* Dusty rose – elegant and balanced */
+  --white: #f0f2f5;         /* Light gray-white – clean and readable */
+  --green: #6fcf97;         /* Calm green – fresh but muted */
+  --dark-gray: #2c2c3a;     /* Subtle warm dark gray – smoother than black */
 }
 
 body {
