@@ -456,8 +456,8 @@ body {
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2.5rem;
   margin-top: 2.5rem;
 }
