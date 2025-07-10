@@ -1,0 +1,199 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Uday Maheshwari Portfolio</title>
+  <meta name="description" content="Discover Uday Maheshwari's professional marketing and tech portfolio. Explore skills, freelance services, achievements, and contact details — built with smooth animations and a modern design.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your actual domain -->
+  <meta property="og:title" content="Uday Maheshwari | MarketingPortfolio">
+  <meta property="og:description" content="View Uday Maheshwari’s portfolio highlighting digital marketing skills, freelance services, and professional achievements in a modern, animated layout.">
+  <meta property="og:image" content="https://imagedelivery.net/None/f6018993j04cdj4e11ja661jbea7a0315734/public">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://yourdomain.com"> <!-- Replace with your actual domain -->
+  <meta name="twitter:title" content="Uday Maheshwari | Marketing Portfolio">
+  <meta name="twitter:description" content="Explore Uday Maheshwari's marketing portfolio featuring smooth animations, resume, freelance services, and contact information.">
+  <meta name="twitter:image" content="https://imagedelivery.net/None/f6018993j04cdj4e11ja661jbea7a0315734/public">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="intro-screen" class="intro-screen">
+    <canvas id="bg-canvas"></canvas>
+    <div class="intro-content">
+      <h1 class="intro-title">ENTER THE PORTFOLIO</h1>
+      <button id="portfolio-btn" class="portfolio-btn">PORTFOLIO</button>
+    </div>
+  </div>
+
+  <div id="main-site" class="main-site">
+    <nav class="navbar">
+      <div class="nav-brand">UDAY</div>
+      <button id="hamburger-btn" class="hamburger" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" data-section="about">ABOUT</a></li>
+        <li><a href="#freelance" data-section="freelance">SERVICES</a></li>
+        <li><a href="#skills" data-section="skills">SKILLS</a></li>
+        <li><a href="#achievements" data-section="achievements">PROJECTS</a></li>
+        <li><a href="#contact" data-section="contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="section active">
+      <div class="container">
+        <div class="about-content">
+          <div class="profile-image">
+            <img src="/Assets/uday about.jpg" height="400px" width="400px" alt="Profile">
+          </div>
+          <div class="about-text">
+            <h1 class="name">UDAY MAHESHWARI</h1>
+            <div class="bio">
+              <p>Marketing Strategist & Digital Growth Expert</p>
+              <p>Driving brand success through data-driven marketing campaigns</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="freelance" class="section">
+      <div class="container">
+        <h2 class="section-title">OPEN FOR FREELANCE PROJECTS</h2>
+        <p class="freelance-text">Ready to transform your vision into reality</p>
+        <button class="resume-btn">DOWNLOAD RESUME</button>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">SKILLS</h2>
+               <div class="skills-grid">
+          <div class="skill-item">
+            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=80&h=80&fit=crop&crop=center" alt="Digital Marketing" class="skill-image">
+            <div class="skill-name">Digital Marketing</div>
+            <div class="skill-description">Strategic campaign development and execution</div>
+            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=80&h=80&fit=crop&crop=center" alt="Data Analytics" class="skill-image">
+            <div class="skill-name">Data Analytics</div>
+            <div class="skill-description">Performance tracking and ROI optimization</div>
+            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=80&h=80&fit=crop&crop=center" alt="Social Media Marketing" class="skill-image">
+            <div class="skill-name">Social Media Marketing</div>
+            <div class="skill-description">Brand engagement and community building</div>
+            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=80&h=80&fit=crop&crop=center" alt="Content Strategy" class="skill-image">
+            <div class="skill-name">Content Strategy</div>
+            <div class="skill-description">Compelling storytelling and brand messaging</div>
+            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=80&h=80&fit=crop&crop=center" alt="SEO/SEM" class="skill-image">
+            <div class="skill-name">SEO/SEM</div>
+            <div class="skill-description">Search engine optimization and advertising</div>
+            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=80&h=80&fit=crop&crop=center" alt="Email Marketing" class="skill-image">
+            <div class="skill-name">Email Marketing</div>
+            <div class="skill-description">Automated campaigns and nurture sequences</div>
+            <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title">ACHIEVEMENTS</h2>
+               <div class="achievements-grid">
+          <div class="achievement-card">
+            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop&crop=center" alt="Campaign Success" class="achievement-image">
+            <div class="achievement-badge">🏆</div>
+            <h3>Campaign Excellence Award</h3>
+            <p>Achieved 400% ROI increase for major brand campaign, recognized as Marketing Campaign of the Year by industry leaders</p>
+          </div>
+          <div class="achievement-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop&crop=center" alt="Growth Analytics" class="achievement-image">
+            <div class="achievement-badge">📈</div>
+            <h3>Growth Hacking Master</h3>
+            <p>Scaled startup from 0 to 1M users in 18 months using data-driven growth strategies and viral marketing techniques</p>
+          </div>
+          <div class="achievement-card">
+            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=300&h=200&fit=crop&crop=center" alt="Social Media Success" class="achievement-image">
+            <div class="achievement-badge">🌟</div>
+            <h3>Social Media Phenomenon</h3>
+            <p>Built brand community of 500K+ engaged followers across platforms, generating $2M+ in social commerce revenue</p>
+          </div>
+          <div class="achievement-card">
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=300&h=200&fit=crop&crop=center" alt="Content Marketing" class="achievement-image">
+            <div class="achievement-badge">🎯</div>
+            <h3>Content Marketing Expert</h3>
+            <p>Created viral content series that generated 50M+ views and established thought leadership in marketing automation</p>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">CONTACT</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-info">
+              <h3>Email</h3>
+              <a href="mailto:alex@matrix.dev">alex@matrix.dev</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div class="contact-info">
+              <h3>Phone</h3>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📷</div>
+            <div class="contact-info">
+              <h3>Instagram</h3>
+              <a href="https://instagram.com/alexmatrix" target="_blank">@alexmatrix</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://linkedin.com/in/alexmatrix" target="_blank" class="social-link">💼</a>
+        <a href="https://github.com/alexmatrix" target="_blank" class="social-link">🐙</a>
+        <a href="https://instagram.com/alexmatrix" target="_blank" class="social-link">📷</a>
+        <a href="https://twitter.com/alexmatrix" target="_blank" class="social-link">🐦</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
