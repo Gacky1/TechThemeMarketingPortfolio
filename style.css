@@ -431,9 +431,9 @@ body.noscroll {
   text-decoration: none;
   transition: all 0.3s ease;
   padding: 1rem;
-  border-radius: 50%;
+  /* border-radius: 25%; */
   background: var(--dark-gray);
-  border: 1px solid var(--cyan);
+  /* border: 1px solid var(--cyan); */
 }
 
 .social-link:hover {
