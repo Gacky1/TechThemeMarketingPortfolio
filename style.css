@@ -27,6 +27,11 @@ body {
   overflow-x: hidden;
 }
 
+body.noscroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
 .intro-screen {
   position: fixed;
   top: 0;

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded',  function() {
+  document.body.classList.add('noscroll');
   const introScreen = document.getElementById('intro-screen');
   const mainSite = document.getElementById('main-site');
   const portfolioBtn = document.getElementById('portfolio-btn');
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded',  function() {
   portfolioBtn.addEventListener('click', function() {
     clearInterval(matrixInterval);
     introScreen.classList.add('hidden');
+    document.body.classList.remove('noscroll');
     
     setTimeout(() => {
       mainSite.classList.add('visible');
