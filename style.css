@@ -14,7 +14,7 @@
   --dark-gray: #1a1a1a; */
   --bg-dark: #202124;
   --cyan: #00bcd4;
-  --magenta: #ec407a;
+  --magenta: #ffffff;
   --white: #f5f5f5;
   --green: #4caf50;
   --dark-gray: #2e2e32; /* Subtle warm dark gray – smoother than black */
@@ -61,7 +61,7 @@ body {
 }
 
 .intro-title {
-  font-family: 'Audiowide', cursive;
+  font-family: 'Arika', cursive;
   font-size: 4rem;
   color: var(--cyan);
   text-shadow: 0 0 20px var(--cyan);
